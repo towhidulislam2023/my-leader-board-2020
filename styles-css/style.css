@@ -202,6 +202,9 @@
  /*.................................
              blog section end
  ..................................*/
+ /*.................................
+       courses-section  start
+ ..................................*/
  .courses-section {}
 
  .couerse {
@@ -301,8 +304,9 @@
      }
 
      .top-players-blogs {
-         width: 100%;
-         height: fit-content;
+        width: 90%;
+        height: fit-content;
+        margin: 0 auto;
      }
 
      .players {
@@ -313,12 +317,19 @@
      .blogs{
         grid-template-columns: repeat(1, 1fr);
      }
+     .blog-title{
+        font-size: 15px;
+     }
+     .blog-writer{
+        font-size: 14px;
+     }
      hr{
         width: 100%;
      }
       .couerse{
-        width: 100%;
+        width:90%;
         height: fit-content;
+        margin: 0 auto;
       }
       .couerse-container {
         grid-template-columns: repeat(1,1fr);
@@ -342,8 +353,9 @@
      }
 
      .top-players-blogs {
-         width: 100%;
+         width: 90%;
          height: fit-content;
+         margin: 0 auto;
      }
 
      .players {
@@ -354,12 +366,19 @@
      .blogs{
         grid-template-columns: repeat(2, 1fr);
      }
+     .blog-title{
+        font-size: 15px;
+     }
+     .blog-writer{
+        font-size: 14px;
+     }
      hr{
         width: 100%;
      }
       .couerse{
-        width: 100%;
+        width: 90%;
         height: fit-content;
+        margin: 0 auto;
       }
       .couerse-container {
         grid-template-columns: repeat(2,1fr);
