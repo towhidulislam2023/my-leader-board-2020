@@ -142,6 +142,12 @@
      height: 56px;
  }
 
+ .player-name {
+     font-size: 18px;
+     line-height: 27px;
+     color: #000000;
+ }
+
  /*.................................
   top player end 
  ..................................*/
@@ -208,15 +214,16 @@
  }
 
  .couerse-container {
-    display: flex;
-    gap: 20px;
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 20px;
  }
 
  .courses-box {}
 
  .c-image {
-    width: 224px;
-    height: 104px;
+     width: 224px;
+     height: 104px;
  }
 
  .coourses-info {}
@@ -227,9 +234,11 @@
      line-height: 23px;
      color: #1E1E1E;
  }
- .t-tt{
-    font-size: 14px;
+
+ .t-tt {
+     font-size: 14px;
  }
+
  .course-teacher {
      font-weight: 400;
      font-size: 14.6913px;
@@ -240,25 +249,29 @@
 
  .course-view {
      display: flex;
-     justify-content:flex-start;
+     justify-content: flex-start;
      align-items: center;
      gap: 30px;
  }
-.rating{
-    display: flex;
-    align-items: center;
-    gap: 2px;
-}
+
+ .rating {
+     display: flex;
+     align-items: center;
+     gap: 2px;
+ }
+
  .rating span {
-    font-size: 13px;
+     font-size: 13px;
  }
 
  .fa-solid {
      color: #FFC014;
  }
- .fa-star{
-    font-size: 13px;
+
+ .fa-star {
+     font-size: 13px;
  }
+
  .total-time {
      background: #FFE4E8;
      color: #FF4A60;
@@ -269,13 +282,94 @@
      padding: 5px;
      border-radius: 14.6913px;
      justify-content: center;
-    
+
 
  }
- .total-time span{
-    font-size: 13.6913px;
+
+ .total-time span {
+     font-size: 13.6913px;
  }
 
+ /* responsiveness code start  */
  @media screen and (max-width:576px) {
-   
- }
+    body{
+        width:100%;
+    }
+     nav {
+         width: 100%;
+         padding: 10px
+     }
+
+     .top-players-blogs {
+         width: 100%;
+         height: fit-content;
+     }
+
+     .players {
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .player-name {}
+     .blogs{
+        grid-template-columns: repeat(1, 1fr);
+     }
+     hr{
+        width: 100%;
+     }
+      .couerse{
+        width: 100%;
+        height: fit-content;
+      }
+      .couerse-container {
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    /* .courses-box{
+        margin: 0 auto;
+    } */
+    .courses-title{
+        width: 70%;
+    }
+ } 
+ /* tab  */
+@media screen and (min-width:577px) and (max-width:992px){
+    body{
+        width:100%;
+    }
+     nav {
+         width: 100%;
+         padding: 30px
+     }
+
+     .top-players-blogs {
+         width: 100%;
+         height: fit-content;
+     }
+
+     .players {
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .player-name {}
+     .blogs{
+        grid-template-columns: repeat(2, 1fr);
+     }
+     hr{
+        width: 100%;
+     }
+      .couerse{
+        width: 100%;
+        height: fit-content;
+      }
+      .couerse-container {
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    /* .courses-box{
+        margin: 0 auto;
+    } */
+    .courses-title{
+        width: 70%;
+    }
+    
+}
